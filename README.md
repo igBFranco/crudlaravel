@@ -1,4 +1,4 @@
-# **PROJETO: helloworldlaravel**
+# **PROJETO: crudlaravel**
 Criando o primeiro repositório de exemplo no GitHub
 
 ## **Desenvolvido por:** Igor Bueno Franco
