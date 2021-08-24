@@ -42,7 +42,7 @@
 
                     <div class="well well-sm clearfix">
                         <button class="btn btn-success pull-right" title="@lang('Salvar')"
-                            type="submit">@lang('Adicionar')</button>
+                            type="submit">@lang('Alterar')</button>
                     </div>
 
                     {!! Form::close() !!}

@@ -15,7 +15,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex justify-content-between w-100">
-                        <span>@lang('(Listagem de Pacientes)')</span>
+                        <span>@lang('Listagem de Pacientes')</span>
                         <a href="{{ url('pacientes/create') }}" class="btn-primary btn-sm">
                             <i class="fa fa-plus"></i> @lang('Novo Paciente')
                         </a>
