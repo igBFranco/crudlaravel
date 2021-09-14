@@ -42,12 +42,12 @@
 
                     <div class="form-group">
                         {!! Form::label(__('Data:')) !!}
-                        {!! Form::text("data", $consulta->data ,["id" => "data", "class"=>"form-control mmss","required"=>"required"]) !!}
+                        {!! Form::date("data", $consulta->data ,["id" => "data", "class"=>"form-control mmss","required"=>"required"]) !!}
                     </div>
 
                     <div class="form-group">
                         {!! Form::label(__('Hora:')) !!}
-                        {!! Form::text("hora", $consulta->hora ,["id" => "hora", "class"=>"form-control mmss","required"=>"required"]) !!}
+                        {!! Form::time("hora", $consulta->hora ,["id" => "hora", "class"=>"form-control mmss","required"=>"required"]) !!}
                     </div>
 
                     <div class="well well-sm clearfix">
