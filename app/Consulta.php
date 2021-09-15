@@ -12,4 +12,14 @@ class Consulta extends Model
         'data',
         'hora'
     ];
+
+    //criar uma funçao para estabelecer a associação entre a classe consulta e a classe paciente
+    public function paciente() {
+        return $this->belongsTo(Paciente::class);
+    }
+    //criar uma funçao para estabelecer a associação entre a classe consulta e a classe medico
+    public function medico() {
+        return $this->belongsTo(Medico::class);
+    }
+
 }

@@ -11,4 +11,11 @@ class Medico extends Model
         'nome',
         'crm'
     ];
+
+    //criar uma funçao para estabelecer a associação entre a classe medico e a classe consulta
+
+    public function consulta() {
+        //especificar o tipo de associação
+        return $this->hasMany(Consulta::class);
+    }
 }

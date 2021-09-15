@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Consulta;
+use App\Medico;
+use App\Paciente;
 use Illuminate\Http\Request;
 
 class ConsultaController extends Controller
@@ -28,7 +30,12 @@ class ConsultaController extends Controller
      */
     public function create()
     {
-        return view ('consultas.create');
+        //obtendo todos os pacientes
+        $pacientes = Paciente::pluck('nome', 'id');
+        //obtendo todos os medicos
+        $medicos = Medico::pluck('nome', 'id');
+        //chamando a tela para o cadastro de consultas
+        return view ('consultas.create', compact('pacientes', 'medicos'));
     }
 
     /**

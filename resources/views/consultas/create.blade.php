@@ -32,12 +32,12 @@
 
                     <div class="form-group">
                         {!! Form::label(__('Paciente:')) !!}
-                        {!! Form::text("paciente_id", null ,["class"=>"form-control","required"=>"required"]) !!}
+                        {!! Form::select("paciente_id", $pacientes, null ,["class"=>"form-control","required"=>"required"]) !!}
                     </div>
 
                     <div class="form-group">
                         {!! Form::label(__('Médico:')) !!}
-                        {!! Form::text("medico_id", null ,["class"=>"form-control","required"=>"required"]) !!}
+                        {!! Form::select("medico_id", $medicos, null ,["class"=>"form-control","required"=>"required"]) !!}
                     </div>
 
                     <div class="form-group">
