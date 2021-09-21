@@ -84,12 +84,16 @@ class ConsultaController extends Controller
      */
     public function edit($id)
     {
+        //obtendo os dados dos pacientes
+        $pacientes = Paciente::pluck('nome','id');
+        //obtendo os dados dos médicos
+        $medicos = Medico::pluck('nome', 'id');
         // criando um objeto para receber o resultado
         // da busca de registro/objeto específico
         $consulta = Consulta::findOrFail($id);
         // retornando a tela de edição com o
         // objeto recuperado
-        return view('consultas.edit', compact('consulta'));
+        return view('consultas.edit', compact('consulta', 'pacientes', 'medicos'));
     }
 
     /**

@@ -43,8 +43,8 @@
                             @foreach($consultas as $consulta)
                             <tr>
                                 <td>{{$consulta->id}}</td>
-                                <td>{{$consulta->paciente_id}}</td>
-                                <td>{{$consulta->medico_id}}</td>
+                                <td>{{$consulta->paciente->nome}}</td>
+                                <td>{{$consulta->medico->nome}}</td>
                                 <td>{{$consulta->data}}</td>
                                 <td>{{$consulta->hora}}</td>
                                 <td class="text-center p-0 align-middle" width="70">
