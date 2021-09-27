@@ -18,4 +18,8 @@ class Paciente extends Model
         //especificar o tipo de associação
         return $this->hasMany(Consulta::class);
     }
+
+    public function convenio() {
+        return $this->belongsTo(Convenio::class);
+    }
 }

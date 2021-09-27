@@ -22,4 +22,8 @@ class Consulta extends Model
         return $this->belongsTo(Medico::class);
     }
 
+    public function convenio() {
+        return $this->belongsTo(Convenio::class);
+    }
+
 }
