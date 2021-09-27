@@ -22,3 +22,5 @@ Route::resource('pacientes', 'PacienteController');
 Route::resource('medicos', 'MedicoController');
 
 Route::resource('consultas', 'ConsultaController');
+
+Route::resource('especialidades', 'EspecialidadeController');

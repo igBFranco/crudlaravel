@@ -18,4 +18,9 @@ class Medico extends Model
         //especificar o tipo de associação
         return $this->hasMany(Consulta::class);
     }
+
+    public function especialidade() {
+        return $this->belongsTo(Especialidade::class);
+    }
+    
 }
