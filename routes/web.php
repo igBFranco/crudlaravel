@@ -28,3 +28,5 @@ Route::resource('especialidades', 'EspecialidadeController');
 Route::resource('convenios','ConvenioController');
 
 Route::resource('cargos','CargoController');
+
+Route::resource('tipoexames', 'TipoExameController');
