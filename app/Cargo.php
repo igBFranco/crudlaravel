@@ -11,4 +11,8 @@ class Cargo extends Model
         'nome_cargo',
         'desc_cargo'
     ];
+
+    public function funcionario(){
+        return $this->hasMany(Funcionario::class);
+    }
 }
